@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Best of Sioux Falls</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <style>
+
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #BCC9AE;
+
+  }
+
+  h2 {
+    color: #00234C;
+  }
+
+  .card {
+        background-color: #BCC9AE;
+  }
+  .button {
+    background-color: #00162F;
+    color: #64C4FF;
+    padding: 13px 24px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 4px 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #64C4FF;
+    text-decoration: none;
+    color: white;
+  }
+
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .squareimg {
+    height: 300px;
+    width: 300px;
+
+  }
+
+
+  .titlecolor {
+    background-color: #00234C;
+  }
+
+  .navcolor {
+    background-color: #9CB6C6;
+  }
+
+  .popcolor {
+    color: #00234C;
+  }
+
+  </style>
+</head>
+
+<body>
+
+<div class="jumbotron text-center titlecolor text-white-50" style="margin-bottom:0">
+  <h1>Best of Sioux Falls</h1>
+  <h4>Trustworthy Reviews from People You Trust</h4>
+</div>
+
+<nav class="navbar navbar-expand-sm navcolor navbar-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item p-1 ml-2">
+        <a class="nav-link" href="#R" aria-label="Jump to Restaurants">Restaurants</a>
+      </li>
+      <li class="nav-item p-1 ml-2">
+        <a class="nav-link" href="#Ba" aria-label="Jump to Breweries">Bakeries</a>
+      </li>
+      <li class="nav-item p-1 ml-2">
+        <a class="nav-link" href="#Br" aria-label="Jump to Breweries">Breweries</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container-sm" style="margin-top:30px">
+  <h2 id="R">Restaurants</h2>
+  <div class="row" style ="margin-top:30px">
+    <div class="col-md">
+      <div class="card" style="height:450px; width:300px">
+        <img class="card-img-top" src="images/breadcircus.jpg" alt="Bread & Circus restaurant" style="100%">
+        <div class="card-body">
+          <h4 class="card-title">Bread & Circus</h4>
+          <p class="card-text">Guy Fieri was here.</p>
+          <a href="https://www.breadandcircussd.com/s/order" class="button">Menu</a>
+          <a href="#" class="button">See Reviews</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md">
+      <div class="card" style="height:450px; width:300px">
+      <img class="card-img-top" src="images/swampdaddys.jpg" alt="Swamp Daddy's restaurant" style="100%">
+      <div class="card-body">
+        <h4 class="card-title">Swamp Daddy's</h4>
+        <p class="card-text">Beaudions are the Best</p>
+        <a href="https://www.swampdaddyscajunkitchen.com/our-menu" class="button">Menu</a>
+        <a href="#" class="button">See Reviews</a>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md">
+      <div class="card" style="height:450px; width:300px">
+      <img class="card-img-top" src="images/sanaa.jpg" alt="Sanaa's restaurant" style="100%">
+      <div class="card-body">
+        <h4 class="card-title">Sanaa's</h4>
+        <p class="card-text">Did She Beat Bobby Flay?</p>
+        <a href="https://www.sanaacooks.com/lunch-menu" class="button">Menu</a>
+        <a href="#" class="button">See Reviews</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br>
+    <br>
+    <h2 id="Ba">Bakeries</h2>
+    <div class="row" style ="margin-top:30px">
+      <div class="col-md">
+        <div class="card" style="height:450px; width:300px">
+          <img class="card-img-top" src="images/josiahs.jpg" alt="Josiah's Bakery" style="100%">
+          <div class="card-body">
+            <h4 class="card-title">Josiah's</h4>
+            <p class="card-text">I happen to know the owner.</p>
+            <a href="https://josiahscoffee.com/menu/" class="button">Menu</a>
+            <a href="#" class="button">See Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <div class="card" style="height:450px; width:300px">
+        <img class="card-img-top" src="images/queencity.jpg" alt="Queen City Bakery" style="100%">
+        <div class="card-body">
+          <h4 class="card-title">Queen City</h4>
+          <p class="card-text">From Brooklyn to Sioux Falls</p>
+          <a href="https://queencitybakery.com" class="button">Menu</a>
+          <a href="#" class="button">See Reviews</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md">
+        <div class="card" style="height:450px; width:300px">
+        <img class="card-img-top" src="images/ch.jpg" alt="CH Patisserie" style="100%">
+        <div class="card-body">
+          <h4 class="card-title">CH Patisserie</h4>
+          <p class="card-text">By Top Chef, Chirs Hanmer</p>
+          <a href="https://chpatisserie.square.site/s/shop" class="button">Menu</a>
+          <a href="#" class="button">See Reviews</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <br>
+      <br>
+      <h2 id="Br">Breweries</h2>
+      <div class="row" style ="margin-top:30px">
+
+        <div class="col-md">
+          <div class="card" style="height:450px; width:300px">
+          <img class="card-img-top" src="images/severance.jpg" alt="Severance Brewing" style="100%">
+          <div class="card-body">
+            <h4 class="card-title">Severance Brewing</h4>
+            <p class="card-text">Try the Monster Cookie Porter</p>
+            <a href="#" class="button">See Reviews</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card" style="height:450px; width:300px">
+            <img class="card-img-top" src="images/wg.jpg" alt="Woodgrain Brewing" style="100%">
+            <div class="card-body">
+              <h4 class="card-title">Woodgrain</h4>
+              <p class="card-text">I pretended to work here once.</p>
+              <a href="#" class="button">See Reviews</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card" style="height:450px; width:300px">
+          <img class="card-img-top" src="images/remedy.jpg" alt="Remedy Brewing" style="100%">
+          <div class="card-body">
+            <h4 class="card-title">Remedy Brewing</h4>
+            <p class="card-text">I actually worked here once.</p>
+            <a href="#" class="button">See Reviews</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+</main>
+
+
+
+<footer class="footer mt-auto py-3 bgcolor">
+  <div class="container">
+    <p class="text-center">Ryan Otto.  Created 2022.</p>
+  </div>
+</footer>
+
+</body>
+</html>
