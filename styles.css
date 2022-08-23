@@ -1,0 +1,74 @@
+body {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1em;
+    background-color: #00162F;
+    color: #D9D9DA;
+
+  }
+
+  h2, h6 {
+    color: #64C4FF;
+  }
+
+
+  a {
+    color: #64C4FF;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .button {
+    background-color: #00162F;
+    color: #64C4FF;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #64C4FF;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 3px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #64C4FF;
+    text-decoration: none;
+    color: white;
+  }
+
+  .images {
+    flex-direction: row;
+  }
+
+  .material-symbols-outlined:hover {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: default;
+  }
+
+  .titlecolor {
+    background-color: #00234C;
+    color: white;
+  }
+
+  .navcolor {
+    color: #00162F;
+    background-color: white;
+    /* background-color: #9CB6C6; */
+
+  }
+
+  .popcolor {
+    color: #64C4FF;
+  }
+
+  @media screen and (max-width: 800px) {
+    .images {
+      flex-direction: column;
+    }
+  }

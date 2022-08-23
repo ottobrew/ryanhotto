@@ -5,118 +5,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <style>
-
-  body {
-    font-family: "Ubuntu", sans-serif;
-    background-color: #00162F;
-    color: #D9D9DA;
-  }
-
-  h2 {
-    color: #64C4FF;
-  }
-  a {
-    color: #64C4FF;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  .button {
-    background-color: #00162F;
-    color: #64C4FF;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #64C4FF;
-    border-radius: 4px;
-    font-size: 1em;
-    margin: 3px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: #64C4FF;
-    text-decoration: none;
-    color: white;
-  }
-
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  .squareimg {
-    height: 300px;
-    width: 300px;
-
-  }
-
-
-  .titlecolor {
-    background-color: #00234C;
-  }
-
-  .navcolor {
-    background-color: #9CB6C6;
-  }
-
-  .popcolor {
-    color: #64C4FF;
-  }
-
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic">
 </head>
 
 <body>
 
-<div class="jumbotron text-center titlecolor text-white-50" style="margin-bottom:0">
+<header class="jumbotron text-center titlecolor" style="margin-bottom:0">
   <h1>Ryan H. Otto</h1>
-  <p>Portfolio of Current and Past Projects</p>
-</div>
+  <p>Portfolio of Work</p>
+</header>
 
-<nav class="navbar navbar-expand-sm navcolor navbar-light">
-  <a class="navbar-brand" href="#"></a>
+<nav class="navbar navbar-expand-sm sticky-top bg-dark">
+  <!-- <a class="navbar-brand" href="#"></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item text-body p-1">
         <a class="nav-link" href="#SD" aria-label="Jump to Software Development Examples">Software Development</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item p-1">
         <a class="nav-link" href="#WD" aria-label="Jump to Design Examples">Design</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item p-1">
         <a class="nav-link" href="#IT" aria-label="Jump to IT Support Experience">IT Support</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item p-1">
         <a class="nav-link" href="#CS" aria-label="Jump to Computer Science Degree Progress">CS Degree</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container-sm" style="margin-top:30px">
+<main class="container-md" style="margin-top:30px">
+  <section>
     <h2>Summary</h2>
     <p>Experienced collaborative leader and lifelong learner, currently pursuing BS in Computer Science.
       My goal is to move from dabbling in code to making it my career.
     I seek to create space at the intersection of the artistic and the technical, with a lens shaped by
-    fourteen years of team experience across disciplines including nonprofit leadership and IT support,
-    managing projects, people, and organizational change.</p>
+    fourteen years of team experience across disciplines including nonprofit leadership, music and creative design, tech support, and
+    managing projects and people.</p>
     <br>
+  </section>
 
+  <section>
       <h2 id="SD">Software Development</h2>
-      <h5>Project Code Examples</h5>
+      <h4 class="ml-2">Project Code Examples</h4>
       <br>
       <a href="https://github.com/ottobrew/SchedulingApp" class="button" role="button" target="_blank" aria-label="Link to SchedulingApp code on GitHub">Scheduling App</a>
       <br>
@@ -124,7 +64,7 @@
       <p>Scheduling Application developed with <b class="popcolor">Java</b>, <b class="popcolor">JavaFX</b>, and <b class="popcolor">SQL</b>.  Built for the purpose of creating, viewing, tracking,
         and editing appointments and customers for a variety of business applications. Application connects using <b class="popcolor">API</b> to MySQL database. User authenticates with username and password. Front-end UI allows user to add,
         update, and delete items from database. </p>
-      <p>* IntelliJ IDEA 2021.1.3 Community  *  Java SDK v.11.0.13  *  Javafx-sdk-17.0.1  *  Mysql-connector-java-8.0.27</p>
+      <p class="ml-2">* IntelliJ IDEA 2021.1.3 Community  *  Java SDK v.11.0.13  *  Javafx-sdk-17.0.1  *  Mysql-connector-java-8.0.27</p>
 
       <p>Synopsis: To run the program, begin by launching the app.  Login with username (test) and password (test).
       Once login is validated, you will receive a notification of any upcoming appointments.
@@ -142,60 +82,66 @@
       <br>
       <br>
       <p>Inventory Management System application.  WGU Software I project developed with <b class="popcolor">Java</b> and <b class="popcolor">JavaFX</b>.</p>
-      <br>
+      <!-- <br>
       <br>
       <p><button type="button" class="button" role="button" aria-label="Future Link to Spring and Java Project">REST API with Spring and Java</button></p>
-      <p>Current Learning and Work in Progress:  Creating REST API with <b class="popcolor">Spring</b> framework for <b class="popcolor">Java</b> web application.</p>
+      <p>Current Learning and Work in Progress:  Creating REST API with <b class="popcolor">Spring</b> framework for <b class="popcolor">Java</b> web application.</p> -->
+    </section>
+
       <br>
       <br>
+    <section>
       <h2 id="WD">Web Design</h2>
-      <h5>Design Examples</h5>
+      <h4 class="ml-2">Design Examples</h4>
 
-      <div class="d-inline-flex align-content-around">
-        <div class="p-3 ">
+      <article class="d-flex align-content-around images">
+        <figure class="p-3">
           <img src="images/PortfolioSite.jpg" class="img-fluid rounded" alt="Ryan Otto Portfolio website">
-          <div>This Portfolio Website</div>
-          <br>
-          <p>Original Design. Built with HTML, CSS, and Bootstrap 4.</p>
-          <p>Hosted on AWS Amplify</p>
-        </div>
-        <div class="p-3 ">
+          <figcaption><p><span class="popcolor">This Portfolio Website</span><br>
+          Original design, built with HTML, CSS, and Bootstrap 4. Hosted on AWS Amplify.</p></figcaption>
+        </figure>
+        <figure class="p-3">
           <a href="https://www.theopencirclesantafe.org"><img src="images/theopencircle2.jpg" class="img-fluid rounded" alt="The Open Circle Santa Fe website">
-          <div>The Open Circle, Santa Fe</div></a>
-          <p>Consultant, Designer, and Site Layout.</p> <p>Site Management with Squarespace Platform</p>
-        </div>
-        <div class="p-3">
+          <figcaption>Open Circle, Santa Fe</a><br>
+          <p>Consultant, Designer, and Site Layout<br>
+            Content Management with Squarespace</p>
+          </figcaption> 
+        </figure>
+        <figure class="p-3">
           <a href="https://www.runsiouxfalls.org"><img src="images/runsiouxfalls2.jpg" class="img-fluid rounded"  alt="Sioux Falls Run Club website">
-          <div>Sioux Falls Run Club</div></a>
-          <p>Consultant, Designer, and Site Layout.</p> <p>Site Management with Squarespace Platform</p>
-        </div>
-      </div>
+          <figcaption>Sioux Falls Run Club</a><br>
+          <p>Consultant, Designer, and Site Layout<br>
+            Content Management with Squarespace</p>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
       <br>
       <br>
 
-      <div>
+    <section>
       <h2 id="IT">IT Support</h2>
-      <h5>Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota</h5>
-      <p>Dec 2021-Present</p>
-      <p>Current full-time role:</p>
-      <div class="ml-3">
-        <p> • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents </p>
-        <p> • Listen well and show empathy to users while problem-solving presented issues </p>
-        <p> • Troubleshoot and bring to resolution software & hardware issues on Windows & Mac systems</p>
-        <p> • Develop relationships with campus employees to understand successes, styles, and challenges </p>
-        <p> • Prepare and configure computer and peripheral devices for new and current employees </p>
-        <p> • Support applications and educate remote and onsite users, beginning at onboarding </p>
-        <p> • Collaborate with other team members and escalate issues to appropriate departments </p>
-        <p> • Quickly learn new software, technical skills, and approaches to solve problems </p>
-        <p> • Deploy and manage iOS devices with MDM </p>
-        <p> • Member of hardware standards team </p>
-      </div>
-      <br>
-      </div>
+      <h5>Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Present)</small></h5>
+      <h6 class="ml-2">Current Full-Time Role:</h6>
+      <article class="ml-3">
+        <p> • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents <br>
+         • Listen well and show empathy to users while problem-solving presented issues <br>
+         • Troubleshoot and bring to resolution software & hardware issues on Windows & Mac systems<br>
+         • Develop relationships with campus employees to understand successes, styles, and challenges <br>
+         • Prepare and configure computer and peripheral devices for new and current employees <br>
+         • Support applications and educate remote and onsite users, beginning at onboarding <br>
+         • Collaborate with other team members and escalate issues to appropriate departments <br>
+         • Quickly learn new software, technical skills, and approaches to solve problems <br>
+         • Deploy and manage iOS devices with MDM <br>
+         • Member of hardware standards team </p>
+      </article>
+    </section>
+    <br>
 
-
+    <section>
       <h2 id="CS">B.S. in Computer Science</h2>
-      <h5>Western Governor's University <small> (Anticipated graduation: April 2023)</h5>
+      <h5>Western Governor's University <small>(Anticipated graduation: April 2023)</small></h5>
+      <br>
       <h6 class="ml-3">Completed Coursework</h6>
 
       <div class="row ml-4">
@@ -240,7 +186,7 @@
         <div class="col">
           <p><span class="material-symbols-outlined popcolor">
             done
-          </span>Web Development (HTML & CSS)</p>
+          </span>HTML & CSS</p>
         </div>
       </div>
 
@@ -258,7 +204,7 @@
         <div class="col">
           <p><span class="material-symbols-outlined popcolor">
             done
-          </span>Operating Systems for Programmers</p>
+          </span>Operating Systems</p>
         </div>
         <div class="col">
           <p><span class="material-symbols-outlined popcolor">
@@ -266,29 +212,26 @@
           </span>Calculus I</p>
         </div>
       </div>
+    </section>
+      <br>  
 
-      <br>
-
+    <section>
       <h5>Certifications</h5>
       <div class="col ml-4">
         <p><span class="material-symbols-outlined popcolor mr-2">
-        verified</span>CompTIA Project+</p>
-        <p><span class="material-symbols-outlined popcolor mr-2">
-        verified
-        </span>ITIL 4 Foundations</p>
+          verified</span>CompTIA Project+</p>
         <p><span class="material-symbols-outlined popcolor mr-2">
         verified</span>Fundamentals in Design Thinking Certificate from IDEO (2019)</p>
         <p><span class="material-symbols-outlined popcolor mr-2">
+          verified
+        </span>ITIL 4 Foundations</p>
+        <p><span class="material-symbols-outlined popcolor mr-2">
         verified</span>Conflict Mediation Skills Training Institute, Lombard Mennonite Peace Center (2016)</p>
-
     </div>
-    <br>
-
-</div>
-
-
-
-<footer class="footer mt-auto py-3 bgcolor">
+  </section>
+</main>
+<br>
+<footer class="footer mt-3 py-3 bgcolor">
   <div class="container">
     <p class="text-center">Ryan Otto.  Created 2022.</p>
   </div>
