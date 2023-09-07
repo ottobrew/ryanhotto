@@ -40,6 +40,10 @@ body {
     color: white;
   }
 
+  .card-text {
+    color: #00162F;
+  }
+
   .images {
     flex-direction: row;
   }
