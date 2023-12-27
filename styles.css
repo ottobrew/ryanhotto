@@ -10,6 +10,9 @@ body {
     color: #64C4FF;
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
 
   a {
     color: #64C4FF;
@@ -44,8 +47,27 @@ body {
     color: #00162F;
   }
 
+  .fa-brands {
+    color: #D9D9DA;
+    padding: 0.5rem;
+  }
+
+  i {
+    padding: 2rem;
+  }
+
   .images {
     flex-direction: row;
+  }
+
+  .languages {
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+  }
+
+  .lang-title {
+    color: #64C4FF;
+    padding: 5px 0px;
   }
 
   .material-symbols-outlined:hover {
@@ -69,6 +91,15 @@ body {
 
   .popcolor {
     color: #64C4FF;
+  }
+
+  .title-name {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .title-location {
+    padding-bottom: 2rem ;
   }
 
   @media screen and (max-width: 800px) {

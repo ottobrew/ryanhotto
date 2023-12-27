@@ -5,30 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7ef94fd712.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic">
 </head>
 
 <body>
 
 <header class="jumbotron text-center titlecolor" style="margin-bottom:0">
-  <h1>Ryan H. Otto</h1>
-  <p>Portfolio of Work</p>
+  <h1 class="title-name">Ryan H. Otto</h1>
+  <h3 class="title-role">Lead Applications Support Analyst</h3>
+  <h3 class="title-location">at Sanford Health</h3>
+  <a href="https://github.com/ottobrew"><i class="fa-brands fa-github fa-lg"></i></a>
+  <a href="https://www.linkedin.com/in/ryanhotto/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
 </header>
 
 <nav class="navbar navbar-expand-sm sticky-top bg-dark">
-  <!-- <a class="navbar-brand" href="#"></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item text-body p-1">
-        <a class="nav-link" href="#SD" aria-label="Jump to Software Development Examples">Software Development</a>
+        <a class="nav-link" href="#PR" aria-label="Jump to Software Project Examples">Projects</a>
       </li>
       <!-- <li class="nav-item p-1">
         <a class="nav-link" href="#WD" aria-label="Jump to Design Examples">Design</a>
@@ -40,49 +43,24 @@
         <a class="nav-link" href="#CS" aria-label="Jump to Degrees">Degrees</a>
       </li>
       <li class="nav-item p-1">
-        <a class="nav-link" href="#CA" aria-label="Jump to Computer Science Degree Progress">Certifications & Awards</a>
+        <a class="nav-link" href="#CA" aria-label="Jump to Certs and Awards">Certifications & Awards</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<main class="container-sm" style="margin-top:30px">
+<main class="container-md" style="margin-top:30px">
   <div class="row">
-    <div class="col-md-3 pt-2 pr-3 mt-5 h-25 shadow">
-      <h6>Languages</h6>
-        <p>Java</p>
-        <p>Python</p>
-        <p>Django framework</p>
-        <p>HTML / CSS / Bootstrap</p>   
-        <p>Javascript</p>
-        <p>NumPy / Pandas / Matplotlib</p> 
-        <p>C++</p>
-        <p>SQL (MySQL & PostgreSQL)</p>     
-        <p>XML / JSON</p>
-        <p>AIML</p>
-        <p>Familiar with Java Spring</p>
-    </div>
-
-
-
-  <div class="col-md-9 pl-5 pr-2">
+  <div class="col-md-9 pl-5 pr-5">
     <section>
       <h2>Summary</h2>
-      <p>Experienced collaborative leader and analytical thinker seeking to build creative and strategic solutions, 
-        with a lens shaped by fifteen years of team experience across disciplines 
-        including nonprofit leadership, organizational strategy, application administration, and project management.</p>
-      <br>
+      <h5>Seeking a career as a software engineer, my goal is to build creative, strategic, and accessible solutions. </h5>
     </section>
-
+    <br>
+    <br>
     <section>
-        <h2 id="SD">Software Development</h2>
-        <h4 class="ml-2">Project Code Examples</h4>
-        <br>
-        <br>
-        <a href="https://park-weather.azurewebsites.net/" class="button" role="button" target="_blank" aria-label="Link to Weather App on Azure">State Park Weather Web App</a>
-        <a href="https://github.com/ottobrew/park_weather" class="button" role="button" target="_blank" aria-label="Link to Weather App Code">View Code</a>
-        <br>
-        <br>
+        <h2 id="PR">Projects</h2>
+        <h3>State Park Weather App</h3>
         <p>A Weather App featuring live weather data using an API call to Open Weather.</p>
         <article class="d-flex align-content-around images">
           <figure class="p-3">
@@ -92,17 +70,18 @@
             <img src="images/park-weather-cards.jpg" class="img-fluid rounded" alt="State Park Weather app code">
           </figure>
         </article>
-
+        <a href="https://park-weather.azurewebsites.net/" class="button" role="button" target="_blank" aria-label="Link to Weather App on Azure">State Park Weather Web App</a>
+        <a href="https://github.com/ottobrew/park_weather" class="button" role="button" target="_blank" aria-label="Link to Weather App Code">View Code</a>
+        <br>
+        <br>
         <p>
           This State Park Weather App gets live weather data using the OpenWeather API.  An API call gets a JSON object.  
-          Data is parsed with Python and then formatted with HTML/CSS. Developed with <b class="popcolor">Python</b>, <b class="popcolor">Bootstrap</b>, <b class="popcolor">HTML</b>, <b class="popcolor">CSS</b>, 
-          and <b class="popcolor">JSON</b>, on the <b class="popcolor">Django framework</b>.
+          Data is parsed with Python and then formatted with HTML & CSS. Developed with <b class="popcolor">Python</b>, <b class="popcolor">Bootstrap</b>, <b class="popcolor">HTML</b>, <b class="popcolor">CSS</b>, 
+          and <b class="popcolor">JSON</b>, on the <b class="popcolor">Django framework</b>. <b class="popcolor">CI/CD</b> deployment to <b class="popcolor">Microsoft Azure</b>.
         </p>
         <br>
         <br>
-        <a href="https://github.com/ottobrew/photogallery" class="button" role="button" target="_blank" aria-label="Link to Photo Gallery">Photo Gallery Web App</a>
-        <br>
-        <br>
+        <h3>Photo Gallery Web App</h3>
         <p>A Photo Gallery App built with Django framework.</p>
         <article class="d-flex align-content-around images">
           <figure class="p-3">
@@ -112,7 +91,9 @@
             <img src="images/gallery_auth.jpg" class="img-fluid rounded" alt="Photo Gallery view for authenticated user">
           </figure>
         </article>
-
+        <a href="https://github.com/ottobrew/photogallery" class="button" role="button" target="_blank" aria-label="Link to Photo Gallery">Photo Gallery App</a>
+        <br>
+        <br>
         <p>
           This Photo Gallery App showcases a clean and simple grid design while taking advantage of Django's secure authentication system framework. 
           The images above show the views for all users (left) and for a logged in user (right).  This app allows an authenticated user to upload and delete photos. 
@@ -120,10 +101,12 @@
         </p>
         <br>
         <br>
-        <a href="https://github.com/ottobrew/fraudDetectionML/" class="button" role="button" target="_blank" aria-label="Link to Fraud Detection Machine Learning Capstone Project">Fraud Detection Machine Learning Model</a>
-        <br>
-        <br>
+        <h3>Fraud Detection Machine Learning Model</h3>
         <p>My Capstone Project toward the completion of a B.S. in Computer Science at WGU.</p>
+        <br>
+        <a href="https://github.com/ottobrew/fraudDetectionML/" class="button" role="button" target="_blank" aria-label="Link to Fraud Detection Machine Learning Capstone Project">Fraud Detection ML Model</a>
+        <br>
+        <br>
         <p>
           A supervised machine learning model, this fraud detection machine learning application is trained on a large dataset of synthesized financial transactions 
           and utilizes a logistic regression algorithm to discern patterns in order to predict with high accuracy whether or not a transaction is fraudulent.
@@ -132,26 +115,28 @@
         </p>
         <br>
         <br>
+        <h3>Delivery Routing Program</h3>
+        <p>This is a Delivery Routing Program written in <b class="popcolor">Python 3</b> using PyCharm 2022.2.2 (Community Edition) IDE.</p>
+        <br>
         <a href="https://github.com/ottobrew/DeliveryRoutingProgram" class="button" role="button" target="_blank" aria-label="Link to Delivery Routing Program Code on GitHub">Delivery Routing Program</a>
         <br>
         <br>
-        <p>This is a Delivery Routing Program written in <b class="popcolor">Python 3</b> using PyCharm 2022.2.2 (Community Edition) IDE.</p>
         <p>
-          A project for Algorithms & Data Structures II course, this program utilizes a hash table and greedy algorithm to efficiently route 40 packages
+          A project for Algorithms & Data Structures II course, this program utilizes a <b class="popcolor">hash table</b> and <b class="popcolor">greedy algorithm</b> to efficiently route 40 packages
           for delivery by two trucks in fewer than 140 miles, while meeting detailed requirements for truck space limits, individual package delays, delivery deadlines, 
           and one address change. CLI allows user to track packages by package id and check delivery status of packages by entering a time.
         </p>
         <br>
         <br>
+        <h3>Scheduling App</h3>
+        <p>Scheduling Application developed with <b class="popcolor">Java</b>, <b class="popcolor">JavaFX</b>, and <b class="popcolor">SQL</b>.  Built for the purpose of creating, viewing, tracking,
+          and editing appointments and customers for a variety of business applications. Application connects using <b class="popcolor">API</b> to MySQL database. User authenticates with username and password. Front-end UI allows user to add, update, and delete items from database. (WGU Software II project)</p>
+        <!-- <p class="ml-2">* IntelliJ IDEA 2021.1.3 Community  *  Java SDK v.11.0.13  *  Javafx-sdk-17.0.1  *  Mysql-connector-java-8.0.27</p> -->
+        <br>
         <a href="https://github.com/ottobrew/SchedulingApp" class="button" role="button" target="_blank" aria-label="Link to SchedulingApp code on GitHub">Scheduling App</a>
         <br>
         <br>
-        <p>Scheduling Application developed with <b class="popcolor">Java</b>, <b class="popcolor">JavaFX</b>, and <b class="popcolor">SQL</b>.  Built for the purpose of creating, viewing, tracking,
-          and editing appointments and customers for a variety of business applications. Application connects using <b class="popcolor">API</b> to MySQL database. User authenticates with username and password. Front-end UI allows user to add,
-          update, and delete items from database. </p>
-        <p class="ml-2">* IntelliJ IDEA 2021.1.3 Community  *  Java SDK v.11.0.13  *  Javafx-sdk-17.0.1  *  Mysql-connector-java-8.0.27</p>
-
-        <p>Synopsis: To run the program, begin by launching the app.  Login with username (test) and password (test).
+        <!-- <p>Synopsis: To run the program, begin by launching the app.  Login with username (test) and password (test).
         Once login is validated, you will receive a notification of any upcoming appointments.
         You will then arrive at the main landing page which shows complete tables of Appointments and Customers,
         along with buttons to Add, Update, or Delete selected appointments or customers.  You can also go to a
@@ -159,15 +144,14 @@
         Customer button, you will be taken to respective forms in which you can add details and then save records
         to the database.  On the main landing page, you also have the option to select from the tableviews an
         appointment or customer.  Once selected, you are able to update individual details or delete records by
-        using the buttons on the right pane. (WGU Software II project)
-        </p>
-
+        using the buttons on the right pane. 
+        </p> -->
         <br>
+        <br>
+        <h3>Inventory App</h3>
+        <p>Inventory Management System application.  WGU Software I project developed with <b class="popcolor">Java</b> and <b class="popcolor">JavaFX</b>.</p>
         <br>
         <a href="https://github.com/ottobrew/java-inventory-system" class="button" role="button" target="_blank" aria-label="Link to Inventory System App code on GitHub">Inventory App</a>
-        <br>
-        <br>
-        <p>Inventory Management System application.  WGU Software I project developed with <b class="popcolor">Java</b> and <b class="popcolor">JavaFX</b>.</p>
         <!-- <br>
         <br>
         <p><button type="button" class="button" role="button" aria-label="Future Link to Spring and Java Project">REST API with Spring and Java</button></p>
@@ -214,13 +198,12 @@
       <br>
       <br>
     </section> -->
-
-
+    <br>
       <section>
 
         <h2 id="IT">Technical Experience</h2>
-
-        <h5>Lead Applications Support Analyst<small> at Sanford Health, Sioux Falls, South Dakota (March 2023-Present)</small></h5>
+        <br>
+        <h3>Lead Applications Support Analyst<small> at Sanford Health, Sioux Falls, South Dakota (March 2023-Present)</small></h3>
         <h6 class="ml-2">Current Full-Time Role:</h6>
         <article class="ml-3">
           <p> 
@@ -235,7 +218,7 @@
         </p>
         </article>
 
-        <h5>Applications Administrator<small> at Sanford Health, Sioux Falls, South Dakota (Oct 2022-March 2023)</small></h5>
+        <h3>Applications Administrator<small> at Sanford Health, Sioux Falls, South Dakota (Oct 2022-March 2023)</small></h3>
         <article class="ml-3">
           <p> • Support integration builds aligned with business requirements <br>
           • Troubleshoot and work toward incident resolution <br>
@@ -246,7 +229,7 @@
         </p>
         </article>
               
-        <h5>Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Oct 2022)</small></h5>
+        <h3>Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Oct 2022)</small></h3>
         <article class="ml-3">
           <p> • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents <br>
           • Listen well and show empathy to users while problem-solving presented issues <br>
@@ -278,7 +261,7 @@
       </section>
 
       <section>
-        <h5 id="CA">Certifications & Awards</h5>
+        <h2 id="CA">Certifications & Awards</h2>
         <div class="col ml-2">
           <p><span class="material-symbols-outlined popcolor mr-2">
             verified</span>CompTIA Project+</p>
@@ -293,6 +276,20 @@
       </div>
     </section>
 
+  </div>
+  <div class="col-md-3 pl-4 mt-3 h-25 languages">
+    <h5 class="lang-title">Languages</h5>
+      <p>Java</p>
+      <p>Python</p>
+      <p>Django framework</p>
+      <p>HTML / CSS / Bootstrap</p>   
+      <p>Javascript</p>
+      <p>XML / JSON</p>
+      <p>SQL (MySQL & PostgreSQL)</p>     
+      <p>C++</p>
+      <p>NumPy / Pandas / Matplotlib</p> 
+      <p>AIML</p>
+      <p>C#</p>
   </div>
   </div>
 </main>
