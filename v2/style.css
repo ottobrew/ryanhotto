@@ -1,0 +1,126 @@
+i {
+  transform: scale(1.5);
+  padding: 1rem;
+  color: black;
+}
+
+section i {
+  color: rgb(58, 58, 151);
+}
+
+a {
+text-decoration: none !important;
+}
+
+a:hover {
+text-decoration: none !important;
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+section h3 {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+} 
+
+section.opened h3 {
+    font-weight: 700;
+}
+
+section div.info {
+    display: none;
+    line-height: 1.4;
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 40em;
+}
+
+section.opened div.info {
+    display: block;
+}
+
+.line {
+    border-bottom: 2px solid rgb(13, 118, 150);
+    width: 0;
+    transition: width 500ms ease;
+}
+
+.role:hover {
+    font-weight: 700;
+    transition: font-weight 300ms ease;
+}
+
+section.opened .line {
+    width: 100%;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+  
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }
+
+.project-overlay:hover {
+    transform: scale(1.05);
+    background-color: rgba(46, 52, 54, 0.8);
+    color: white;
+    opacity: 1;
+    transition: 0.4s;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+
+}
+
+.project-text {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    overflow-wrap: normal;
+}
+
+.project-overlay:hover .project-text {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay:hover h2, 
+.project-overlay:hover span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gradtrans {
+  background-image: linear-gradient(to bottom, white, rgb(40, 6, 78));
+}
