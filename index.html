@@ -1,332 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ryan Otto Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/7ef94fd712.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan H. Otto Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ef94fd712.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <i class="fa-solid fa-code" style="color: rgb(91, 76, 112);"></i>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#A" class="nav-link px-3 text-white">About</a></li>
+          <li><a href="#P" class="nav-link px-3 text-white">Projects</a></li>
+          <li><a href="#L" class="nav-link px-3 text-white">Languages</a></li>
+          <li><a href="#E" class="nav-link px-3 text-white">Experience</a></li>
+          <li><a href="#D" class="nav-link px-3 text-white">Education</a></li>
+        </ul>
+      </div>
+    </div>
+  </header> 
 
-<header class="jumbotron text-center titlecolor" style="margin-bottom:0">
-  <h1 class="title-name">Ryan H. Otto</h1>
-  <h3 class="title-role">Lead Applications Support Analyst</h3>
-  <h3 class="title-location">at Sanford Health</h3>
-  <a href="https://github.com/ottobrew"><i class="fa-brands fa-github fa-lg"></i></a>
-  <a href="https://www.linkedin.com/in/ryanhotto/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-</header>
-
-<nav class="navbar navbar-expand-sm sticky-top bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item text-body p-1">
-        <a class="nav-link" href="#PR" aria-label="Jump to Software Project Examples">Projects</a>
-      </li>
-      <!-- <li class="nav-item p-1">
-        <a class="nav-link" href="#WD" aria-label="Jump to Design Examples">Design</a>
-      </li> -->
-      <li class="nav-item p-1">
-        <a class="nav-link" href="#IT" aria-label="Jump to Technical Experience">Technical Experience</a>
-      </li>
-      <li class="nav-item p-1">
-        <a class="nav-link" href="#CS" aria-label="Jump to Degrees">Degrees</a>
-      </li>
-      <li class="nav-item p-1">
-        <a class="nav-link" href="#CA" aria-label="Jump to Certs and Awards">Certifications & Awards</a>
-      </li>
-    </ul>
+<main>
+  <div class="px-4 py-3 my-5 text-center">
+    <!-- <img class="d-block mx-auto mb-5" src="images/guitar.png" alt="guitarcloseup" width="57" height="57" style="border-radius: 100px; background-position: center center;"> -->
+    <i class="fa-solid fa-terminal fa-lg" style="color: rgb(71, 71, 113)"></i>
+    <h1 class="display-5 my-5 fw-bold text-body-emphasis">Ryan H. Otto</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="display-6 my-4">Lead Applications Support Analyst</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="https://github.com/ottobrew"><i class="fa-brands fa-github fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/ryanhotto/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
   </div>
-</nav>
 
-<main class="container-md" style="margin-top:30px">
-  <div class="row">
-  <div class="col-md-9 pl-5 pr-5">
-    <section>
-      <h2>Summary</h2>
-      <h5>Seeking a career as a software engineer, my goal is to build creative, strategic, and accessible solutions. </h5>
-    </section>
-    <br>
-    <br>
-    <section>
-        <h2 id="PR">Projects</h2>
-        <h3>State Park Weather App</h3>
-        <p>A Weather App featuring live weather data using an API call to Open Weather.</p>
-        <article class="d-flex align-content-around images">
-          <figure class="p-3">
-            <img src="images/park-weather-home.jpg" class="img-fluid rounded" alt="State Park Weather app homepage">
-          </figure>
-          <figure class="p-3">
-            <img src="images/park-weather-cards.jpg" class="img-fluid rounded" alt="State Park Weather app code">
-          </figure>
-        </article>
-        <a href="https://park-weather.azurewebsites.net/" class="button" role="button" target="_blank" aria-label="Link to Weather App on Azure">State Park Weather Web App</a>
-        <a href="https://github.com/ottobrew/park_weather" class="button" role="button" target="_blank" aria-label="Link to Weather App Code">View Code</a>
-        <br>
-        <br>
-        <p>
-          This State Park Weather App gets live weather data using the OpenWeather API.  An API call gets a JSON object.  
-          Data is parsed with Python and then formatted with HTML & CSS. Developed with <b class="popcolor">Python</b>, <b class="popcolor">Bootstrap</b>, <b class="popcolor">HTML</b>, <b class="popcolor">CSS</b>, 
-          and <b class="popcolor">JSON</b>, on the <b class="popcolor">Django framework</b>. <b class="popcolor">CI/CD</b> deployment to <b class="popcolor">Microsoft Azure</b>.
-        </p>
-        <br>
-        <br>
-        <h3>Scheduling App</h3>
-        <p>Scheduling Application developed with <b class="popcolor">Java</b>, <b class="popcolor">JavaFX (FXML)</b>, and <b class="popcolor">SQL</b>, structured using <b class="popcolor">MVC</b> pattern and <b class="popcolor">DAO</b>. </p>
-        <br>
-        <a href="https://github.com/ottobrew/SchedulingApp/tree/main/src" class="button" role="button" target="_blank" aria-label="Link to SchedulingApp code on GitHub">Scheduling App</a>
-        <br>
-        <br>
-        <p>
-        This WGU Software II project incorporates a number of object oriented programming skills. Within this app, a user can create, view, track, and edit appointments and customers for a variety of business applications. <br>
-          This app features: <br>
-          • Login form to verify user credentials before authenticating to database <br>
-          • Forms to allow user to add, update, and delete items using <b class="popcolor">API</b> to MySQL database <br>
-          • Logs of all login activity with timestamps <br>
-          • At launch, a method checks system default location to prompt user in either English or French <br>
-          • Features an alert at login if authenticated user has any upcoming appointments in their schedule within 15 minutes of login time <br>
-        </p>
-        <!-- <p class="ml-2">* IntelliJ IDEA 2021.1.3 Community  *  Java SDK v.11.0.13  *  Javafx-sdk-17.0.1  *  Mysql-connector-java-8.0.27</p> -->
-        <br>
-        <br>
-        <h3>Fraud Detection Machine Learning Model</h3>
-        <p>My Capstone Project toward the completion of a B.S. in Computer Science at WGU.</p>
-        <br>
-        <a href="https://github.com/ottobrew/fraudDetectionML/" class="button" role="button" target="_blank" aria-label="Link to Fraud Detection Machine Learning Capstone Project">Fraud Detection ML Model</a>
-        <br>
-        <br>
-        <p>
-          A supervised machine learning model, this fraud detection machine learning application is trained on a large dataset of synthesized financial transactions 
-          and utilizes a logistic regression algorithm to discern patterns in order to predict with high accuracy whether or not a transaction is fraudulent.
-          Written in <b class="popcolor">Python 3</b> using Python's scikit-learn library, <b class="popcolor">NumPy, Pandas, Matplotlib, and Seaborn</b>, 
-          in a <b class="popcolor">Jupyter Notebook</b>.
-        </p>
-        <br>
-        <br>
-        <h3>Delivery Routing Program</h3>
-        <p>This is a Delivery Routing Program written in <b class="popcolor">Python 3</b> using PyCharm 2022.2.2 (Community Edition) IDE.</p>
-        <br>
-        <a href="https://github.com/ottobrew/DeliveryRoutingProgram" class="button" role="button" target="_blank" aria-label="Link to Delivery Routing Program Code on GitHub">Delivery Routing Program</a>
-        <br>
-        <br>
-        <p>
-          A project for Algorithms & Data Structures II course, this program utilizes a <b class="popcolor">hash table</b> and <b class="popcolor">greedy algorithm</b> to efficiently route 40 packages
-          for delivery by two trucks in fewer than 140 miles, while meeting detailed requirements for truck space limits, individual package delays, delivery deadlines, 
-          and one address change. CLI allows user to track packages by package id and check delivery status of packages by entering a time.
-        </p>
-        <br>
-        <br>
-        <h3>Tetris Clone</h3>
-        <p>Javascript game development walk-through</p>
-        <article class="d-flex align-content-around images">
-          <figure class="p-3">
-            <img src="images/Tetris.jpg" class="img-fluid rounded" alt="Tetris game screenshot">
-          </figure>
-        </article>
-        <!-- <a href="https://ryanhotto.com/tetris" class="button" role="button" target="_blank" aria-label="Link to Tetris Game">Play Tetris Clone</a> -->
-        <br>
-        <p>
-          In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project step-by-step walk-through, I learned how to develop a clone of the classic Tetris game in <b class="popcolor">HTML</b>, <b class="popcolor">CSS</b>, and modern <b class="popcolor">Javascript</b>.<br>
-          A few key learnings:<br>
-          •  Utilized the Canvas element along with requestAnimationFrame for game animation<br>
-          •  Used a 2D array to map tetromino locations, movements, and collisions<br>
-          •  Leveraged spread operator with key move object literals<br>
-          •  Implemented Proxy to get and set object values for points, lines, and game Levels<br>
-          •  Saved High Score data to local browser storage and display ordered list in browser
-        </p>
-        <br>
-        <br>
-        <h3>Photo Gallery Web App</h3>
-        <p>A Photo Gallery App built with Django framework.</p>
-        <article class="d-flex align-content-around images">
-          <figure class="p-3">
-            <img src="images/gallery_generic.jpg" class="img-fluid rounded" alt="Photo Gallery view for all users">
-          </figure>
-          <figure class="p-3">
-            <img src="images/gallery_auth.jpg" class="img-fluid rounded" alt="Photo Gallery view for authenticated user">
-          </figure>
-        </article>
-        <a href="https://github.com/ottobrew/photogallery" class="button" role="button" target="_blank" aria-label="Link to Photo Gallery">Photo Gallery App</a>
-        <br>
-        <br>
-        <p>
-          This Photo Gallery App showcases a clean and simple grid design while taking advantage of Django's secure authentication system framework. 
-          The images above show the views for all users (left) and for a logged in user (right).  This app allows an authenticated user to upload and delete photos. 
-          Developed using the <b class="popcolor">Django framework</b>, with <b class="popcolor">Python 3</b>, <b class="popcolor">Bootstrap 5</b>, <b class="popcolor">HTML</b>, and <b class="popcolor">CSS</b>. 
-        </p>
-        <!-- <p>Synopsis: To run the program, begin by launching the app.  Login with username (test) and password (test).
-        Once login is validated, you will receive a notification of any upcoming appointments.
-        You will then arrive at the main landing page which shows complete tables of Appointments and Customers,
-        along with buttons to Add, Update, or Delete selected appointments or customers.  You can also go to a
-        Reports page by clicking the Reports button at the bottom.  By clicking on the Add Appointment or Add
-        Customer button, you will be taken to respective forms in which you can add details and then save records
-        to the database.  On the main landing page, you also have the option to select from the tableviews an
-        appointment or customer.  Once selected, you are able to update individual details or delete records by
-        using the buttons on the right pane. 
-        </p> -->
-        <br>
-        <br>
-        <h3>Inventory App</h3>
-        <p>Inventory Management System application.  WGU Software I project developed with <b class="popcolor">Java</b> and <b class="popcolor">JavaFX</b>.</p>
-        <br>
-        <a href="https://github.com/ottobrew/java-inventory-system" class="button" role="button" target="_blank" aria-label="Link to Inventory System App code on GitHub">Inventory App</a>
-        <!-- <br>
-        <br>
-        <p><button type="button" class="button" role="button" aria-label="Future Link to Spring and Java Project">REST API with Spring and Java</button></p>
-        <p>Current Learning and Work in Progress:  Creating REST API with <b class="popcolor">Spring</b> framework for <b class="popcolor">Java</b> web application.</p> -->
-      </section>
-      <br>
-      <br>
-      <!-- <section>
-        <h2 id="WD">Web Design</h2>
-        <h4 class="ml-2">Design Examples</h4>
-        <br>
-        <br>
-      <div class="row row-cols-1 row-cols-lg-3">
-        <div class="col mb-4">
-          <div class="card shadow-sm h-100">
-            <img src="images/PortfolioSite.jpg" class="card-img-top" alt="Ryan Otto Portfolio website">
-            <div class="card-body">
-              <h5 class="card-title popcolor">This Portfolio Website</h5>
-              <p class="card-text">Original design, built with HTML, CSS, and Bootstrap 4. Hosted on AWS Amplify.</p>
+<section>
+
+<div class="container px-4 py-3" id="custom-cards">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <a href="#P">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/jelly.jpg);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Projects</h3>
+          </div>
+        </div></a>
+      </div>
+
+      <div class="col">
+        <a href="#E">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/wilco2.jpeg);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Experience</h3>
+          </div>
+        </div></a>
+      </div>
+
+      <div class="col">
+        <a href="#D">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/hallway.jpeg);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Degrees & Certs</h3>
+          </div>
+        </div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="A"> 
+  <div class="px-4 py-1 mt-5 text-center">
+    <h2 class="display-6 mb-1 fw-bold text-body-emphasis">Summary</h2>
+  </div>
+  <div class="col-8 mx-auto p-5">
+  <p class="display-6 py-4">Currently seeking a Software Engineering role, my goal is to build creative, strategic, and accessible solutions. </p>
+  </div>
+</section>
+
+<section id="P">
+  <div class="px-4 py-1 mt-5 text-center">
+    <h2 class="display-6 mb-1 fw-bold text-body-emphasis">Projects</h2>
+  </div>
+  <div class="container px-4 py-5" id="custom-cards">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <a href="https://github.com/ottobrew/SchedulingApp/tree/main/src" target="_blank" aria-label="Link to SchedulingApp code on GitHub">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/java.jpeg); background-position: left center;">
+            <div class="project-overlay">
+              <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">State Park Weather App</h2>
+                    <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+                      <span class="badge bg-info-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Python</span>
+                      <span class="badge bg-info-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">Django</span>
+                      <span class="badge bg-info-subtle border border-success-subtle text-success-emphasis rounded-pill">HTML</span>
+                      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Bootstrap + CSS</span>
+                      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSON</span>
+
+                      <p class="project-text p-3 m-2">This State Park Weather App gets live weather data using the OpenWeather API. An API call gets a JSON object. Data is parsed with Python and then formatted with HTML & CSS. Developed with Python, Bootstrap, HTML, CSS, and JSON, on the Django framework. CI/CD deployment to Microsoft Azure.</p>
+                    </div>
+              </div>
+          </div>
+          </div></a>
+        </div>
+  
+        <div class="col">
+          <a href="https://github.com/ottobrew/fraudDetectionML/" target="_blank" aria-label="Link to Fraud Detection Machine Learning Capstone Project">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg);">
+            <div class="project-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-5 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Machine Learning Model</h2>
+              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Pandas</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">NumPy</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Matplotlib</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Seaborn</span>
+                <p class="project-text p-3 m-2">
+                  A supervised machine learning model, this fraud detection machine learning application is trained on a large dataset of synthesized financial transactions and utilizes a logistic regression algorithm to discern patterns in order to predict with high accuracy whether or not a transaction is fraudulent. Written in Python 3 using Python's scikit-learn library, NumPy, Pandas, Matplotlib, and Seaborn, in a Jupyter Notebook.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div></a>
+          </div>
+  
+        <div class="col">
+          <a href="https://github.com/ottobrew/SchedulingApp/tree/main/src" target="_blank" aria-label="Link to SchedulingApp code on GitHub">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/java.jpeg); background-position: left center;">
+            <div class="project-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Scheduling App</h2>
+              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Java</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">SQL</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JavaFX (FXML)</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">MVC</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">DAO</span>
+
+                <p class="project-text p-3 m-2">
+                  Within this app, a user can create, view, track, and edit appointments and customers for a variety of business applications. 
+                    This app features: <br>
+                    • Login form to verify user credentials before authenticating to database. Forms to allow user to add, update, and delete items using to MySQL database. Logs of all login activity with timestamps. At launch, a method checks system default location to prompt user in either English or French, plus other features. <br>
+                    <!-- • Features an alert at login if authenticated user has any upcoming appointments in their schedule within 15 minutes of login time <br> -->
+                  </p>
+              </div>
+            </div>
+            </div>
+          </div></a>
+        </div>
+
+        <div class="col">
+          <a href="https://github.com/ottobrew/DeliveryRoutingProgram" target="_blank" aria-label="Link to Delivery Routing Program Code on GitHub">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg);">
+            <div class="project-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-5 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Delivery Routing Program</h2>
+              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Hash Table</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Greedy Algorithm</span>
+
+                <p class="project-text p-3 m-2">
+                  A project for Algorithms & Data Structures II course, this program utilizes a hash table and greedy algorithm to efficiently route 40 packages for delivery by two trucks in fewer than 140 miles, while meeting detailed requirements for truck space limits, individual package delays, delivery deadlines, and one address change. CLI allows user to track packages by package id and check delivery status of packages by entering a time.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+          </div></a>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
+            <div class="project-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Tetris</h2>
+              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Javascript</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
+                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">HTML</span>
+
+                <p class="project-text p-3 m-2">
+                  In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project step-by-step walk-through, I learned how to develop a clone of the classic Tetris game in HTML, CSS, and Javascript.<br>
+                  A few key learnings:<br>
+                  •  Utilized the Canvas element along with requestAnimationFrame for game animation<br>
+                  •  Used a 2D array to map tetromino locations, movements, and collisions<br>
+                  •  Leveraged spread operator with key move object literals<br>
+                  •  Implemented Proxy to get and set object values for points, lines, and game Levels<br>
+                  •  Saved High Score data to local browser storage and display ordered list in browser
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <a href="https://github.com/ottobrew/photogallery" target="_blank" aria-label="Link to Photo Gallery code on GitHub">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
+          <div class="project-overlay">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Photo Gallery App</h2>
+            <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Django</span>
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">HTML + CSS</span>
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Bootstrap 5</span>
+
+              <p class="project-text p-3 m-2">
+                This Photo Gallery App showcases a clean and simple grid design while taking advantage of Django's secure authentication system framework. Different app views exist for all visiting users and for a logged in user. This app allows an authenticated user to upload and delete photos. Developed using the Django framework, with Python 3, Bootstrap 5, HTML, and CSS.
+
+              </p>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card shadow-sm h-100">
-            <img src="images/theopencircle2.jpg" class="card-img-top" alt="The Open Circle Santa Fe website">
-            <div class="card-body">
-              <a href="https://www.theopencirclesantafe.org" class="stretched-link" target="_blank">
-                <h5 class="card-title popcolor">Open Circle, Santa Fe</h5></a>
-              <p class="card-text">Consultant, Designer, and Site Layout. Content Management with Squarespace</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card shadow-sm h-100">
-            <img src="images/runsiouxfalls2.jpg" class="card-img-top" alt="Sioux Falls Run Club website">
-            <div class="card-body">
-              <a href="https://www.runsiouxfalls.org" class="stretched-link" target="_blank">
-                <h5 class="card-title popcolor">Sioux Falls Run Club</h5></a>
-              <p class="card-text">Consultant, Designer, and Site Layout. Content Management with Squarespace</p>
-            </div>
+        </div></a>
+    </div>
+
+    <!-- <div class="col">
+      <a href="https://github.com/ottobrew/java-inventory-system" target="_blank" aria-label="Link to Inventory App on GitHub">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
+        <div class="project-overlay">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Inventory App</h2>
+          <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Java</span>
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JavaFX (FXML)</span>
+
+
+            <p class="project-text p-3 m-2">
+              Inventory Management System application. WGU Software I project developed with Java and JavaFX.
+            </p>
           </div>
         </div>
       </div>
-      <br>
-      <br>
-    </section> -->
-    <br>
-      <section>
+      </div></a>
+  </div> -->
+    </div>
+  </div>
+  </section>
 
-        <h2 id="IT">Technical Experience</h2>
-        <br>
-        <h3>Lead Applications Support Analyst<small> at Sanford Health, Sioux Falls, South Dakota (March 2023-Present)</small></h3>
-        <h6 class="ml-2">Current Full-Time Role:</h6>
-        <article class="ml-3">
-          <p> 
-            • Team Lead for IT Supply Chain & Finance Team<br>
-            • Provide Level 2 & Level 3 support; SME for multiple applications in portfolio <br>
-            • Primary liaison with supply chain business partners and third party vendors <br>
-            • Administer Workday ERP including security, integrations, error handling (ANSI X12 EDI)
-            <br>
-            • Configure and manage users, security, software integrations, and software releases for a portfolio of Supply Chain and Finance applications, in support of business requirements <br>
-            • Manage print servers, TCP/IP printers, print drivers, integrations, and SFTP <br>
-            • Communicate and collaborate across teams following change control process change management <br>
-            • Support onboarding of new team members <br>
-        </p>
-        </article>
-
-        <h3>Applications Administrator<small> at Sanford Health, Sioux Falls, South Dakota (Oct 2022-March 2023)</small></h3>
-        <article class="ml-3">
-          <p> • Support integration builds aligned with business requirements <br>
-          • Troubleshoot and work toward incident resolution <br>
-          • Configure and manage users, security, integrations, and software releases for a portfolio of Supply Chain and Finance applications <br>
-          • Administrator of Workday ERP including security, integration management, and error handling <br>
-          • Work collaboratively with team members and third party vendors <br>
-          • Completion of Workday Pro Security Fundamentals <br>
-        </p>
-        </article>
-              
-        <h3>Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Oct 2022)</small></h3>
-        <article class="ml-3">
-          <p> • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents <br>
-          • Listen well and show empathy to users while problem-solving presented issues <br>
-          • Troubleshoot & bring to resolution service tickets for Windows OS & Apple MacOS systems, 
-             Office 365, software, hardware, printers, and network issues <br>
-          • Microsoft SCCM/Configuration Manager/Software Center, Active Directory, TCP/IP, DNS, DHCP, VPN, MDM, RDP <br>
-          • Collaborate with other team members and escalate issues to appropriate departments <br>
-          • Quickly learn new software, technical skills, and approaches to solve problems <br>
-        </p>
-        </article>
-      </section>
-      <br>
-
-      <section>
-        <h2 id="CS">Degrees</h2>
-
-        <p><span class="material-symbols-outlined ml-4">
-          school
-          </span> B.S. in Computer Science -- Western Governor's University (2023)</p>
-        
-        <p><span class="material-symbols-outlined ml-4">
-          school
-          </span> Master of Divinity -- Eden Theological Seminary, Saint Louis, Missouri (2008)</p>        
-
-        <p><span class="material-symbols-outlined ml-4">
-          school
-          </span> B.A. in Music & B.A. in Government/International Affairs -- Augustana College, Sioux Falls, South Dakota (2005)</p>          
-        <br>
-      </section>
-
-      <section>
-        <h2 id="CA">Certifications & Awards</h2>
-        <div class="col ml-2">
-          <p><span class="material-symbols-outlined popcolor mr-2">
-            verified</span>CompTIA Project+</p>
-          <p><span class="material-symbols-outlined popcolor mr-2">
-            verified</span>ITIL 4 Foundations</p>    
-          <p><span class="material-symbols-outlined popcolor mr-2">
-            verified</span>Sanford Health Marketing Standing Ovation Award for Outstanding Partnership with Marketing</p>
-          <p><span class="material-symbols-outlined popcolor mr-2">
-            verified</span>Fundamentals in Design Thinking Certificate from IDEO (2019)</p>
-          <p><span class="material-symbols-outlined popcolor mr-2">
-            verified</span>Conflict Mediation Skills Training Institute, Lombard Mennonite Peace Center (2016)</p>
+  <section id="L">
+    <div class="px-4 py-1 mt-5 text-center">
+      <h2 class="display-6 mt-5 fw-bold text-body-emphasis">Languages</h2>
+    </div>
+    <div class="container px-4 py-5" id="icon-grid">
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-html5"></i>
+          <div>
+            <h3 class="mt-2 fs-4">HTML + CSS</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-bootstrap"></i>
+          <div>
+            <h3 class="mt-2 fs-4">Bootstrap 5</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-js"></i>
+          <div>
+            <h3 class="mt-2 fs-4">Javascript</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-react"></i>
+          <div>
+            <h3 class="mt-2 fs-4">ReactJS</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-python"></i>
+          <div>
+            <h3 class="mt-2 fs-4">Python + Django</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-java"></i>
+          <div>
+            <h3 class="mt-2 fs-4">Java</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-solid fa-database"></i>
+          <div>
+            <h3 class="mt-2 fs-4">SQL</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-microsoft"></i>
+          <div>
+            <h3 class="mt-2 fs-4">C#</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-brands fa-python"></i>
+          <div>
+            <h3 class="mt-2 fs-4">Pandas | Matplotlib | NumPy </h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-solid fa-file-code"></i>
+          <div>
+            <h3 class="mt-2 fs-4">XML</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-solid fa-file-code"></i>
+          <div>
+            <h3 class="mt-2 fs-4">JSON</h3>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <h3 class="mt-2 fs-4">C++</h3>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </div>
-  <div class="col-md-3 pl-4 mt-3 h-25 languages">
-    <h5 class="lang-title">Languages</h5>
-      <p>Java</p>
-      <p>HTML / CSS / Bootstrap</p>   
-      <p>Javascript / ReactJS</p>
-      <p>C#</p>
-      <p>SQL (MySQL & PostgreSQL)</p>   
-      <p>Python + Django framework</p>  
-      <p>NumPy / Pandas / Matplotlib</p> 
-      <p>XML</p>
-      <p>JSON</p>
-      <p>C++</p>
-  </div>
-  </div>
-</main>
-<br>
-<footer class="footer mt-3 py-3 bgcolor">
+
+  <section id="E">
+    <div class="px-4 py-1 mt-5 text-center">
+      <h2 class="display-6 mb-5 fw-bold text-body-emphasis">Technical Experience</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1 status"></div>
+        <div class="col-11">
+
+          <h3 class="mb-4 role">Lead Applications Support Analyst<small> at Sanford Health, Sioux Falls, South Dakota (March 2023-Present)</small></h3>
+          <div class="line"></div>
+          <div class="info mb-4">
+              <p>
+                  • Team Lead for IT Supply Chain & Finance Team<br>
+                  • Provide Level 2 & Level 3 support; SME for multiple applications in portfolio <br>
+                  • Primary liaison with supply chain business partners and third party vendors <br>
+                  • Administer Workday ERP including security, integrations, error handling (ANSI X12 EDI)
+                  <br>
+                  • Configure and manage users, security, software integrations, and software releases for a portfolio of Supply Chain and Finance applications, in support of business requirements <br>
+                  • Manage print servers, TCP/IP printers, print drivers, integrations, and SFTP <br>
+                  • Communicate and collaborate across teams following change control process change management <br>
+                  • Support onboarding of new team members <br>
+              </p>
+          </div>
+          </div>
+      </div>
+    </div>
+</section>
+<section>
   <div class="container">
-    <p class="text-center">Ryan Otto.  2023.</p>
+    <div class="row">
+      <div class="col-1 status"></div>
+      <div class="col-11">
+
+        <h3 class="mb-4 role">Applications Administrator<small> at Sanford Health, Sioux Falls, South Dakota (Oct 2022-March 2023)</small></h3>
+        <div class="line"></div>
+        <div class="info mb-4">
+            <p> 
+                    • Support integration builds aligned with business requirements <br>
+                    • Troubleshoot and work toward incident resolution <br>
+                    • Configure and manage users, security, integrations, and software releases for a portfolio of Supply Chain and Finance applications <br>
+                    • Administrator of Workday ERP including security, integration management, and error handling <br>
+                    • Work collaboratively with team members and third party vendors <br>
+                    • Completion of Workday Pro Security Fundamentals <br>
+            </p>
+        </div>
+    </div>
+    </div>
   </div>
-</footer>
+</section>
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-1 status"></div>
+        <div class="col-11">
+
+        <h3 class="mb-4 role">Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Oct 2022)</small></h3>
+        <div class="line"></div>
+        <div class="info mb-4">
+            <p>
+                • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents <br>
+                • Listen well and show empathy to users while problem-solving presented issues <br>
+                • Troubleshoot & bring to resolution service tickets for Windows OS & Apple MacOS systems, 
+                   Office 365, software, hardware, printers, and network issues <br>
+                • Microsoft SCCM/Configuration Manager/Software Center, Active Directory, TCP/IP, DNS, DHCP, VPN, MDM, RDP <br>
+                • Collaborate with other team members and escalate issues to appropriate departments <br>
+                • Quickly learn new software, technical skills, and approaches to solve problems <br>
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<section id="D">
+  <div class="px-4 py-1 mt-5 text-center">
+    <h2 class="display-6 mt-5 fw-bold text-body-emphasis">Degrees, Certifications, etc</h2>
+  </div>
+  <div class="container px-4 py-5" id="icon-grid">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">B.S. in Computer Science</h3>
+          <p>Western Governor's University (2023)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CompTIA Project+</h3>
+          <p>Certification (2022)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">ITIL 4 Foundations</h3>
+          <p>Certification (2022)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Standing Ovation Award</h3>
+          <p>Sanford Health Marketing Standing Ovation Award for Outstanding Partnership with Marketing (2022)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Fundamentals in Design Thinking</h3>
+          <p>IDEO U Certificate (2019)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-people-group"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Conflict Mediation</h3>
+          <p>Conflict Mediation Skills Training Institute, Lombard Mennonite Peace Center (2016)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Master of Divinity</h3>
+          <p>Eden Theological Seminary (2008)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">B.A. in Music</h3>
+          <p>Augustana University (2005)</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">B.A. in Government & International Affairs</h3>
+          <p>Augustana University (2005)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <i class="fa-solid fa-code" style="color: rgb(58, 58, 151);"></i>
+      <span class="mb-3 mb-md-0">&copy; 2024 Ryan Otto</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a href="https://github.com/ottobrew"><i class="fa-brands fa-github fa-lg"></i></a></li>
+      <li class="ms-3"><a href="https://www.linkedin.com/in/ryanhotto/"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+    </ul>
+  </footer>
+</div>
+
+<script src="script.js"></script>
 
 </body>
-</html>
