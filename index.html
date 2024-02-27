@@ -47,7 +47,7 @@
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
         <a href="#P">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/jelly.jpg);">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/jellyfish.jpeg)">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Projects</h3>
           </div>
@@ -89,7 +89,7 @@
     <h2 class="display-6 mb-1 fw-bold text-body-emphasis">Projects</h2>
   </div>
   <div class="container px-4 py-5" id="custom-cards">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 align-items-stretch g-4 py-5">
         <div class="col">
           <a href="https://github.com/ottobrew/park_weather" target="_blank" aria-label="Link to State Park Weather app code on GitHub">
           <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/java.jpeg); background-position: left center;">
@@ -179,7 +179,7 @@
         </div>
 
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg1')">
             <div class="project-overlay">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Tetris</h2>
@@ -201,7 +201,69 @@
             </div>
           </div>
           </div>
+          <div id="modalImg1" class="modal">
+            <span class="close" onclick="closeModal('modalImg1')"></span>
+            <img src="images/Tetris.jpg" class="modal-content">
+          </div>
       </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg2')">
+          <div class="project-overlay">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Memory Game</h2>
+            <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">React JS</span>
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSX</span>
+              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
+
+              <p class="project-text p-3 m-2">
+                In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project walk-through, I learned how to develop a Memory Card game using React.
+                A few key learnings:<br>
+                •  props to pass data between components <br>
+                •  useState hook to hold current state and update state value for card choices and player turns <br>
+                •  useEffect hook to randomly sort and map cards on game initialization, and to manage card flips and card matches when card choices are made
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="modalImg2" class="modal">
+          <span class="close" onclick="closeModal('modalImg2')"></span>
+          <img src="images/memory-cards.png" class="modal-content">
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg3')">
+        <div class="project-overlay">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">React Weather App</h2>
+          <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">React JS</span>
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSX</span>
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
+            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Rest API</span>
+
+            <p class="project-text p-3 m-2">
+              In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project walk-through, I developed a React Weather app, which gets live weather data using OpenWeatherAPI based upon user input.
+              A few key learnings:<br>
+              •  useState hook to hold current state and update value of user-entered city, weather data, and to handle errors<br>
+              •  useEffect hook to fetch weather data when user initiates search (i.e.when url changes)<br>
+              •  props to pass data between components
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="modalImg3" class="modal">
+        <span class="close" onclick="closeModal('modalImg3')"></span>
+        <img src="images/weather.png" class="modal-content">
+      </div>
+  </div>
+
+
+
 
       <div class="col">
         <a href="https://github.com/ottobrew/photogallery" target="_blank" aria-label="Link to Photo Gallery code on GitHub">
@@ -349,9 +411,10 @@
                   • Team Lead for IT Supply Chain & Finance Team<br>
                   • Provide Level 2 & Level 3 support; SME for multiple applications in portfolio <br>
                   • Primary liaison with supply chain business partners and third party vendors <br>
+                  • Manage upgrade and configuration of BarTender print server redundancy and load balancing <br>
+                  • Configure and manage users, security, software integrations, and software releases for a portfolio of Supply Chain and Finance applications, in support of business requirements <br>
                   • Administer Workday ERP including security, integrations, error handling (ANSI X12 EDI)
                   <br>
-                  • Configure and manage users, security, software integrations, and software releases for a portfolio of Supply Chain and Finance applications, in support of business requirements <br>
                   • Manage print servers, TCP/IP printers, print drivers, integrations, and SFTP <br>
                   • Communicate and collaborate across teams following change control process change management <br>
                   • Support onboarding of new team members <br>
