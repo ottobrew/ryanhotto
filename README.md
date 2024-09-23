@@ -1,0 +1,2 @@
+My portfolio website featuring my software projects, technical experience, and programming languages.  Recently built with Javascript modules utilizing a Project class and Job class, ensuring scalability for additional Project and Job objects.  Data for these objects is mapped from JSON files to an array of objects, then mapped to HTML view.  
+Built with HTML, Javascript, CSS, JSON, and Bootstrap 5.
