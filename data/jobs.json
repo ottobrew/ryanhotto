@@ -1,0 +1,41 @@
+[
+    {
+    "job-id": "job1",
+    "job-title": "Applications Administrator",
+    "job-team": "PACS Imaging Team",
+    "job-location": "Sanford Health, Sioux Falls, SD",
+    "job-dates": "May 2024-Present",
+    "job-tasks": {
+        "one": "Implement, configure, and validate enterprise-wide software releases and upgrades",
+        "two": "Administer application integrations, modalities, and routes for medical imaging exchange (DICOM, HL7)",
+        "three": "Improve alignment between operations and technology team through collaboration and communication"
+        }
+    },
+
+    {
+    "job-id": "job2",
+    "job-title": "Lead Applications Analyst | Applications Administrator",
+    "job-team": "Supply Chain & Finance Apps Team",
+    "job-location": "Sanford Health, Sioux Falls, SD",
+    "job-dates": "Oct 2022-May 2024",
+    "job-tasks": {
+        "one": "Implemented print solution upgrade from single server to multi-server for redundancy and secure authentication to SQL server", 
+        "two": "Built logic and workflow changes for contract software to improve efficiency according to business requirements",
+        "three": "Updated and tested software integrations (web services, EDI, SFTP)",
+        "four": "Communicated and collaborated across teams and with stakeholders to ensure successful project outcomes"
+        }
+    },
+    {
+    "job-id": "job3",
+    "job-title": "Technology Systems Specialist",
+    "job-team": "Technology Solutions",
+    "job-location": "Sanford Health, Sioux Falls, SD",
+    "job-dates": "Dec 2021-Oct 2022",
+    "job-tasks": {
+        "one": "Troubleshoot & resolved tickets for Windows OS, Apple MacOS systems, software, hardware, printers, and network issues",
+        "two": "Utilized Microsoft Configuration Manager, Software Center, Active Directory, TCP/IP, DNS, DHCP, VPN, MDM, RDP",
+        "three": "Imaged and deployed 100s of PCs for enterprise-wide Windows 10 upgrade"
+        }
+    }
+
+]

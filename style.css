@@ -51,31 +51,28 @@ text-decoration: none !important;
     height: 3rem;
   }
 
-/* .gradtrans {
-  background-image: linear-gradient(to bottom, white, rgb(63, 63, 63));
-} */
-
 @media (hover) {
   section {
     display: grid;
 }
+}
 
-section h3 {
+h3 {
     cursor: pointer;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.4;
 } 
 
-section.opened h3 {
+section.opened h3.role {
     font-weight: 700;
 }
 
-section div.info {
+div.info {
     display: none;
     line-height: 1.4;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 10px 0;
     max-width: 40em;
 }
 
@@ -92,27 +89,32 @@ section div.status {
   transition: 0.3s;
 }
 
-section:hover div.status{
-  background:rgb(58, 58, 151, 0.75);
-}
-
-section.opened div.status {
+section.job.opened .status,
+section.job.opened:hover .status {
   background: rgb(58, 58, 151);
 }
 
-.line {
-    border-bottom: 2px solid rgb(58, 58, 151);;
-    width: 0;
-    transition: width 500ms ease;
+section.job:hover .status{
+  background:rgb(58, 58, 151, 0.75);
 }
 
-.role:hover {
-    font-weight: 700;
-    transition: font-weight 300ms ease;
+.role {
+  position: relative;
+  display: inline-block;
 }
 
-section.opened .line {
-    width: 100%;
+.role::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  display: block;
+  left: 0;
+  border-bottom: 2px solid rgb(58, 58, 151);
+  transition: width 500ms ease;
+}
+
+.role:hover::after {
+  width: 100%;
 }
 
 .project-overlay:hover {
@@ -145,37 +147,4 @@ section.opened .line {
 .project-overlay:hover span {
   opacity: 0;
   transition: opacity 0.3s ease;
-}
-
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  max-width: 60%;
-  max-height: 60%;
-  object-fit: contain;
-
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
 }

@@ -23,17 +23,20 @@
           <li><a href="#E" class="nav-link px-3 text-white">Experience</a></li>
           <li><a href="#D" class="nav-link px-3 text-white">Education</a></li>
         </ul>
+        <ul class="nav justify-content-end list-unstyled d-flex">
+          <li class="ms-3" style="color: rgb(167, 167, 167);">Built with Javascript, HTML, CSS, Bootstrap 5, and JSON</li>
+        </ul>
       </div>
     </div>
   </header> 
 
 <main>
   <div class="px-4 py-3 my-5 text-center">
-    <!-- <img class="d-block mx-auto mb-5" src="images/guitar.png" alt="guitarcloseup" width="57" height="57" style="border-radius: 100px; background-position: center center;"> -->
     <i class="fa-solid fa-terminal fa-lg" style="color: rgb(71, 71, 113)"></i>
     <h1 class="display-5 my-5 fw-bold text-body-emphasis">Ryan H. Otto</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="display-6 my-4">Lead Applications Support Analyst</p>
+      <p class="display-6 my-3">B.S. in Computer Science</p>
+      <p class="display-6 my-4">Proficient Software Developer</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <a href="https://github.com/ottobrew"><i class="fa-brands fa-github fa-lg"></i></a>
         <a href="https://www.linkedin.com/in/ryanhotto/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
@@ -84,231 +87,20 @@
   </div>
 </section>
 
+
+
 <section id="P">
   <div class="px-4 py-1 mt-5 text-center">
     <h2 class="display-6 mb-1 fw-bold text-body-emphasis">Projects</h2>
   </div>
+
+<!-- Project object data mapped from json file -->
   <div class="container px-4 py-5" id="custom-cards">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 align-items-stretch g-4 py-5">
-        <div class="col">
-          <a href="https://github.com/ottobrew/park_weather" target="_blank" aria-label="Link to State Park Weather app code on GitHub">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/java.jpeg); background-position: left center;">
-            <div class="project-overlay">
-              <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">State Park Weather App</h2>
-                    <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-                      <span class="badge bg-info-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Python</span>
-                      <span class="badge bg-info-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">Django</span>
-                      <span class="badge bg-info-subtle border border-success-subtle text-success-emphasis rounded-pill">HTML</span>
-                      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Bootstrap + CSS</span>
-                      <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSON</span>
-
-                      <p class="project-text p-3 m-2">This State Park Weather App gets live weather data using the OpenWeather API. An API call gets a JSON object. Data is parsed with Python and then formatted with HTML & CSS. Developed with Python, Bootstrap, HTML, CSS, and JSON, on the Django framework. CI/CD deployment to Microsoft Azure.</p>
-                    </div>
-              </div>
-          </div>
-          </div></a>
-        </div>
-  
-        <div class="col">
-          <a href="https://github.com/ottobrew/fraudDetectionML/" target="_blank" aria-label="Link to Fraud Detection Machine Learning Capstone Project">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg);">
-            <div class="project-overlay">
-            <div class="d-flex flex-column h-100 p-5 pb-5 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Machine Learning Model</h2>
-              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Pandas</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">NumPy</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Matplotlib</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Seaborn</span>
-                <p class="project-text p-3 m-2">
-                  A supervised machine learning model, this fraud detection machine learning application is trained on a large dataset of synthesized financial transactions and utilizes a logistic regression algorithm to discern patterns in order to predict with high accuracy whether or not a transaction is fraudulent. Written in Python 3 using Python's scikit-learn library, NumPy, Pandas, Matplotlib, and Seaborn, in a Jupyter Notebook.
-                </p>
-              </div>
-            </div>
-          </div>
-          </div></a>
-          </div>
-  
-        <div class="col">
-          <a href="https://github.com/ottobrew/SchedulingApp/tree/main/src" target="_blank" aria-label="Link to SchedulingApp code on GitHub">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/java.jpeg); background-position: left center;">
-            <div class="project-overlay">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Scheduling App</h2>
-              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Java</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">SQL</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JavaFX (FXML)</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">MVC</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">DAO</span>
-
-                <p class="project-text p-3 m-2">
-                  Within this app, a user can create, view, track, and edit appointments and customers for a variety of business applications. 
-                    This app features: <br>
-                    • Login form to verify user credentials before authenticating to database. Forms to allow user to add, update, and delete items using to MySQL database. Logs of all login activity with timestamps. At launch, a method checks system default location to prompt user in either English or French, plus other features. <br>
-                    <!-- • Features an alert at login if authenticated user has any upcoming appointments in their schedule within 15 minutes of login time <br> -->
-                  </p>
-              </div>
-            </div>
-            </div>
-          </div></a>
-        </div>
-
-        <div class="col">
-          <a href="https://github.com/ottobrew/DeliveryRoutingProgram" target="_blank" aria-label="Link to Delivery Routing Program Code on GitHub">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg);">
-            <div class="project-overlay">
-            <div class="d-flex flex-column h-100 p-5 pb-5 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Delivery Routing Program</h2>
-              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Hash Table</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Greedy Algorithm</span>
-
-                <p class="project-text p-3 m-2">
-                  A project for Algorithms & Data Structures II course, this program utilizes a hash table and greedy algorithm to efficiently route 40 packages for delivery by two trucks in fewer than 140 miles, while meeting detailed requirements for truck space limits, individual package delays, delivery deadlines, and one address change. CLI allows user to track packages by package id and check delivery status of packages by entering a time.
-
-                </p>
-
-              </div>
-            </div>
-          </div>
-          </div></a>
-        </div>
-
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg1')">
-            <div class="project-overlay">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Tetris</h2>
-              <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Javascript</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
-                <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">HTML</span>
-
-                <p class="project-text p-3 m-2">
-                  In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project step-by-step walk-through, I learned how to develop a clone of the classic Tetris game in HTML, CSS, and Javascript.<br>
-                  A few key learnings:<br>
-                  •  Utilized the Canvas element along with requestAnimationFrame for game animation<br>
-                  •  Used a 2D array to map tetromino locations, movements, and collisions<br>
-                  •  Leveraged spread operator with key move object literals<br>
-                  •  Implemented Proxy to get and set object values for points, lines, and game Levels<br>
-                  •  Saved High Score data to local browser storage and display ordered list in browser
-                </p>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div id="modalImg1" class="modal">
-            <span class="close" onclick="closeModal('modalImg1')"></span>
-            <img src="images/Tetris.jpg" class="modal-content">
-          </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg2')">
-          <div class="project-overlay">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Memory Game</h2>
-            <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">React JS</span>
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSX</span>
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
-
-              <p class="project-text p-3 m-2">
-                In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project walk-through, I learned how to develop a Memory Card game using React.
-                A few key learnings:<br>
-                •  props to pass data between components <br>
-                •  useState hook to hold current state and update state value for card choices and player turns <br>
-                •  useEffect hook to randomly sort and map cards on game initialization, and to manage card flips and card matches when card choices are made
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div id="modalImg2" class="modal">
-          <span class="close" onclick="closeModal('modalImg2')"></span>
-          <img src="images/memory-cards.png" class="modal-content">
-        </div>
-    </div>
-
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;" onclick="openModal('modalImg3')">
-        <div class="project-overlay">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">React Weather App</h2>
-          <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">React JS</span>
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JSX</span>
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">CSS</span>
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Rest API</span>
-
-            <p class="project-text p-3 m-2">
-              In this <a href="https://www.educative.io" target="_blank" aria-label="Link to Educative website">Educative</a> project walk-through, I developed a React Weather app, which gets live weather data using OpenWeatherAPI based upon user input.
-              A few key learnings:<br>
-              •  useState hook to hold current state and update value of user-entered city, weather data, and to handle errors<br>
-              •  useEffect hook to fetch weather data when user initiates search (i.e.when url changes)<br>
-              •  props to pass data between components
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div id="modalImg3" class="modal">
-        <span class="close" onclick="closeModal('modalImg3')"></span>
-        <img src="images/weather.png" class="modal-content">
-      </div>
+    <div class="project-section row row-cols-1 row-cols-sm-2 row-cols-xl-4 align-items-stretch g-4 py-5"></div>
   </div>
+</section>
 
 
-
-
-      <div class="col">
-        <a href="https://github.com/ottobrew/photogallery" target="_blank" aria-label="Link to Photo Gallery code on GitHub">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
-          <div class="project-overlay">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Photo Gallery App</h2>
-            <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Python</span>
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Django</span>
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">HTML + CSS</span>
-              <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Bootstrap 5</span>
-
-              <p class="project-text p-3 m-2">
-                This Photo Gallery App showcases a clean and simple grid design while taking advantage of Django's secure authentication system framework. Different app views exist for all visiting users and for a logged in user. This app allows an authenticated user to upload and delete photos. Developed using the Django framework, with Python 3, Bootstrap 5, HTML, and CSS.
-
-              </p>
-            </div>
-          </div>
-        </div>
-        </div></a>
-    </div>
-
-    <!-- <div class="col">
-      <a href="https://github.com/ottobrew/java-inventory-system" target="_blank" aria-label="Link to Inventory App on GitHub">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/python.jpeg); background-position: left center;">
-        <div class="project-overlay">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Inventory App</h2>
-          <div class="d-flex gap-2 flex-wrap justify-content-center mt-4 pt-5">
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">Java</span>
-            <span class="badge bg-info-subtle border border-info-subtle text-info-emphasis rounded-pill">JavaFX (FXML)</span>
-
-
-            <p class="project-text p-3 m-2">
-              Inventory Management System application. WGU Software I project developed with Java and JavaFX.
-            </p>
-          </div>
-        </div>
-      </div>
-      </div></a>
-  </div> -->
-    </div>
-  </div>
-  </section>
 
   <section id="L">
     <div class="px-4 py-1 mt-5 text-center">
@@ -338,7 +130,7 @@
         <div class="col d-flex align-items-start">
           <i class="fa-brands fa-react"></i>
           <div>
-            <h3 class="mt-2 fs-4">ReactJS</h3>
+            <h3 class="mt-2 fs-4">React JS</h3>
           </div>
         </div>
         <div class="col d-flex align-items-start">
@@ -384,9 +176,9 @@
           </div>
         </div>
         <div class="col d-flex align-items-start">
-          <i class="fa-solid fa-code"></i>
+          <i class="fa-brands fa-node"></i>
           <div>
-            <h3 class="mt-2 fs-4">C++</h3>
+            <h3 class="mt-2 fs-4">Node JS</h3>
           </div>
         </div>
       </div>
@@ -398,77 +190,11 @@
     <div class="px-4 py-1 mt-5 text-center">
       <h2 class="display-6 mb-5 fw-bold text-body-emphasis">Technical Experience</h2>
     </div>
+    <!-- Job object data mapped from json file -->
+    <div class="container job-section"></div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-1 status"></div>
-        <div class="col-11">
-
-          <h3 class="mb-4 role">Lead Applications Support Analyst<small> at Sanford Health, Sioux Falls, South Dakota (March 2023-Present)</small></h3>
-          <div class="line"></div>
-          <div class="info mb-4">
-              <p>
-                  • Team Lead for IT Supply Chain & Finance Team<br>
-                  • Provide Level 2 & Level 3 support; SME for multiple applications in portfolio <br>
-                  • Primary liaison with supply chain business partners and third party vendors <br>
-                  • Manage upgrade and configuration of BarTender print server redundancy and load balancing <br>
-                  • Configure and manage users, security, software integrations, and software releases for a portfolio of Supply Chain and Finance applications, in support of business requirements <br>
-                  • Administer Workday ERP including security, integrations, error handling (ANSI X12 EDI)
-                  <br>
-                  • Manage print servers, TCP/IP printers, print drivers, integrations, and SFTP <br>
-                  • Communicate and collaborate across teams following change control process change management <br>
-                  • Support onboarding of new team members <br>
-              </p>
-          </div>
-          </div>
-      </div>
-    </div>
-</section>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-1 status"></div>
-      <div class="col-11">
-
-        <h3 class="mb-4 role">Applications Administrator<small> at Sanford Health, Sioux Falls, South Dakota (Oct 2022-March 2023)</small></h3>
-        <div class="line"></div>
-        <div class="info mb-4">
-            <p> 
-                    • Support integration builds aligned with business requirements <br>
-                    • Troubleshoot and work toward incident resolution <br>
-                    • Configure and manage users, security, integrations, and software releases for a portfolio of Supply Chain and Finance applications <br>
-                    • Administrator of Workday ERP including security, integration management, and error handling <br>
-                    • Work collaboratively with team members and third party vendors <br>
-                    • Completion of Workday Pro Security Fundamentals <br>
-            </p>
-        </div>
-    </div>
-    </div>
-  </div>
-</section>
-<section>
-    <div class="container">
-      <div class="row">
-        <div class="col-1 status"></div>
-        <div class="col-11">
-
-        <h3 class="mb-4 role">Technology Systems Specialist <small> at Sanford Health, Sioux Falls, South Dakota (Dec 2021-Oct 2022)</small></h3>
-        <div class="line"></div>
-        <div class="info mb-4">
-            <p>
-                • Prioritize & provide timely, efficient, & helpful responses to technology requests and incidents <br>
-                • Listen well and show empathy to users while problem-solving presented issues <br>
-                • Troubleshoot & bring to resolution service tickets for Windows OS & Apple MacOS systems, 
-                   Office 365, software, hardware, printers, and network issues <br>
-                • Microsoft SCCM/Configuration Manager/Software Center, Active Directory, TCP/IP, DNS, DHCP, VPN, MDM, RDP <br>
-                • Collaborate with other team members and escalate issues to appropriate departments <br>
-                • Quickly learn new software, technical skills, and approaches to solve problems <br>
-            </p>
-        </div>
-    </div>
-    </div>
-    </div>
-</section>
+  </section>
+  
 
 <section id="D">
   <div class="px-4 py-1 mt-5 text-center">
@@ -561,6 +287,8 @@
   </footer>
 </div>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
+<script type="module" src="models/Project.js"></script>
+<script type="module" src="models/Job.js"></script>
 
 </body>

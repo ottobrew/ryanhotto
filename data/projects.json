@@ -1,0 +1,58 @@
+[
+    {
+        "proj-name": "Machine Learning Model",
+        "proj-content": "A supervised machine learning model, this fraud detection machine learning application is trained on a large dataset of synthesized financial transactions and utilizes a logistic regression algorithm to discern patterns in order to predict with high accuracy whether or not a transaction is fraudulent. Written in Python 3 using Python's scikit-learn library, NumPy, Pandas, Matplotlib, and Seaborn, in a Jupyter Notebook.",
+        "proj-link": "https://github.com/ottobrew/fraudDetectionML/",
+        "aria-label": "Link to Fraud Detection Machine Learning Capstone Project",
+        "image": "url(images/python.jpeg)",
+        "languages": {
+            "first": "Python",
+            "second": "Pandas",
+            "third": "NumPy",
+            "fourth": "Matplotlib",
+            "fifth": "Seaborn"
+        }
+
+    },
+    {
+        "proj-name": "Java Scheduling App",
+        "proj-content": "Within this app, a user can create, view, track, and edit appointments and customers for a variety of business applications. This app features: • Login form to verify user credentials before authenticating to database. Forms to allow user to add, update, and delete items using to MySQL database. Logs of all login activity with timestamps. At launch, a method checks system default location to prompt user in either English or French, plus other features.",
+        "proj-link": "https://github.com/ottobrew/SchedulingApp/tree/main/src",
+        "aria-label": "Link to Scheduling App code on GitHub",
+        "image": "url(images/java.jpeg)",
+        "languages": {
+            "first": "Java",
+            "second": "SQL",
+            "third": "JavaFX",
+            "fourth": "MVC",
+            "fifth": "DAO"
+        }
+    },
+    {
+        "proj-name": "Delivery Routing Program",
+        "proj-content": "A project for Algorithms & Data Structures II course, this program utilizes a hash table and greedy algorithm to efficiently route 40 packages for delivery by two trucks in fewer than 140 miles, while meeting detailed requirements for truck space limits, individual package delays, delivery deadlines, and one address change. CLI allows user to track packages by package id and check delivery status of packages by entering a time.",
+        "proj-link": "https://github.com/ottobrew/DeliveryRoutingProgram",
+        "aria-label": "Link to Delivery Routing Program Code on GitHub",
+        "image": "url(images/python.jpeg)",
+        "languages": {
+            "first": "Python",
+            "second": "Hash Table",
+            "third": "Greedy Algorithm"
+        }
+    },
+    {
+        "proj-name": "State Park Weather App",
+        "proj-content": "This State Park Weather App gets live weather data using the OpenWeather API. An API call gets a JSON object. Data is parsed with Python and then formatted with HTML & CSS. Developed with Python, Bootstrap, HTML, CSS, and JSON, on the Django framework. CI/CD deployment to Microsoft Azure.",
+        "proj-link": "https://github.com/ottobrew/park_weather",
+        "aria-label": "Link to State Park Weather app code on GitHub",
+        "image": "url(images/java.jpeg)",
+        "languages": {
+            "first": "Python",
+            "second": "Django",
+            "third": "HTML",
+            "fourth": "Bootstrap + CSS",
+            "fifth": "JSON"
+        }
+
+    }
+]
