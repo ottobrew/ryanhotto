@@ -1,5 +1,7 @@
 import Project from "./models/Project.js";
 import Job from "./models/Job.js";
+import Language from "./models/Language.js";
+import Degree from "./models/Degree.js";
 
 async function loadProjects() {
     try {
@@ -33,6 +35,39 @@ async function loadProjects() {
     }
 };
 
+async function loadLanguages() {
+    try {
+        const response = await fetch("/data/lang.json");
+        const langData = await response.json();
+
+        // Map the language data to an array of Language objects
+        const langArray = langData.map(lang => {
+            return new Language(lang["language"], lang["icon-class"]);
+        });
+
+        // Create a div for each language and map the lang data to the HTML
+        const langList = langArray.map(lang => {
+            const langContainer = document.createElement("div");
+            langContainer.classList.add("col", "d-flex", "align-items-start");
+
+            langContainer.innerHTML = lang.toHTML();
+
+            return langContainer;
+        })
+
+        const langSection = document.querySelector(".lang-section");
+
+        // Append each language section to the lang-section container
+        langList.forEach(lang => {
+            langSection.append(lang);
+        });
+
+    } catch (error) {
+        console.error("Error fetching the Languages:", error);
+    }
+};
+
+
 async function loadJobs() {
     try {
         const response = await fetch("/data/jobs.json");
@@ -42,8 +77,6 @@ async function loadJobs() {
         const jobsArray = jobData.map(job => {
             return new Job(job["job-id"], job["job-title"], job["job-team"], job["job-location"], job["job-dates"], job["job-tasks"]["one"], job["job-tasks"]["two"], job["job-tasks"]["three"], job["job-tasks"]["four"]);
         });
-
-        console.log(jobsArray);
 
         // Create a section for each job and map the job data to the HTML
         const jobList = jobsArray.map(job => {
@@ -57,9 +90,7 @@ async function loadJobs() {
                 jobContainer.classList.toggle("opened");
             });
 
-            console.log(jobContainer.classList);
             return jobContainer;
-
         });
 
         const jobSection = document.querySelector(".job-section");
@@ -74,10 +105,43 @@ async function loadJobs() {
     }
 }
 
+async function loadDegrees() {
+    try {
+        const response = await fetch("/data/degrees.json");
+        const degreeData = await response.json();
+
+        // Map degree data to an array of Degree objects
+        const degreeArray = degreeData.map(degree => {
+            return new Degree(degree.title, degree.detail, degree["icon-class"]);
+        });
+
+        // Create a div for each Degree and map the degree data to the HTML
+
+        const degreeList = degreeArray.map(degree => {
+            const degreeContainer = document.createElement("div");
+            degreeContainer.classList.add("col", "d-flex", "align-items-start");
+            degreeContainer.innerHTML = degree.toHTML();
+
+            return degreeContainer;
+        });
+
+        // Append each degree div to the degree-section container
+        const degreeSection = document.querySelector(".degree-section");
+        degreeList.forEach(degree => {
+            degreeSection.append(degree);
+        });
+
+    } catch (error) {
+        console.log("Error fetching the Degrees:", error)
+    };
+};
+
 
 window.onload = function() {
     loadProjects();
+    loadLanguages();
     loadJobs();
+    loadDegrees();
 };
 
 
