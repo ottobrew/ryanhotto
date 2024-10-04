@@ -1,0 +1,51 @@
+[
+    {
+        "language": "HTML + CSS",
+        "icon-class": "fa-brands fa-html5"
+    },
+    {
+        "language": "Bootstrap 5",
+        "icon-class": "fa-brands fa-bootstrap"
+    },
+    {
+        "language": "Javascript",
+        "icon-class": "fa-brands fa-js"
+    },
+    {
+        "language": "React JS",
+        "icon-class": "fa-brands fa-react"
+    },
+    {
+        "language": "Python + Django",
+        "icon-class": "fa-brands fa-python"
+    },
+    {
+        "language": "Java",
+        "icon-class": "fa-brands fa-java"
+    },
+    {
+        "language": "SQL",
+        "icon-class": "fa-solid fa-database"
+    },
+    {
+        "language": "C#",
+        "icon-class": "fa-brands fa-microsoft"
+    },
+    {
+        "language": "Pandas | Matplotlib | NumPy",
+        "icon-class": "fa-brands fa-python"
+    },
+    {
+        "language": "XML",
+        "icon-class": "fa-solid fa-file-code"
+    },
+    {
+        "language": "JSON",
+        "icon-class": "fa-solid fa-file-code"
+    },
+    {
+        "language": "Node JS",
+        "icon-class": "fa-brands fa-node"
+    }
+
+]

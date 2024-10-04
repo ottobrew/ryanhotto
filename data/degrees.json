@@ -1,0 +1,47 @@
+[
+    {
+        "title": "B.S. in Computer Science",
+        "detail": "Western Governor's University (2023)",
+        "icon-class": "fa-solid fa-graduation-cap"
+    }, 
+    {
+        "title": "CompTIA Project+",
+        "detail": "Certification (2022)",
+        "icon-class": "fa-solid fa-certificate"
+    },
+    {
+        "title": "ITIL 4 Foundations",
+        "detail": "Certification (2022)",
+        "icon-class": "fa-solid fa-certificate"
+    },
+    {
+        "title": "Standing Ovation Award",
+        "detail": "Sanford Health Marketing Standing Ovation Award for Outstanding Partnership with Marketing (2022)",
+        "icon-class": "fa-solid fa-award"
+    },
+    {
+        "title": "Fundamentals in Design Thinking",
+        "detail": "IDEO U Certificate (2019)",
+        "icon-class": "fa-solid fa-certificate"
+    },
+    {
+        "title": "Conflict Mediation",
+        "detail": "Conflict Mediation Skills Training Institute, Lombard Mennonite Peace Center (2016)",
+        "icon-class": "fa-solid fa-people-group"
+    },
+    {
+        "title": "Master of Divinity",
+        "detail": "Eden Theological Seminary (2008)",
+        "icon-class": "fa-solid fa-graduation-cap"
+    }, 
+    {
+        "title": "B.A. in Music",
+        "detail": "Augustana University (2005)",
+        "icon-class": "fa-solid fa-graduation-cap"
+    }, 
+    {
+        "title": "B.A. in Government & International Affairs",
+        "detail": "Augustana University (2005)",
+        "icon-class": "fa-solid fa-graduation-cap"
+    }
+]
